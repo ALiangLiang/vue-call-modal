@@ -19,7 +19,7 @@ pnpm add vue-call-modal
 
 ### Basic Example
 
-```vue
+```html
 <!-- CustomModal.vue -->
 <template>
   <dialog ref="dialogRef">
@@ -53,7 +53,7 @@ import CustomModal from './CustomModal.vue'
 export const [openCustomModal] = makeComponentFunction(CustomModal)
 ```
 
-```vue
+```html
 <!-- App.vue -->
 <template>
   <div>
