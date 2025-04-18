@@ -9,6 +9,10 @@ A Vue.js library to easily wrap your modal components and call them with a simpl
 - Compatible with Vue 3
 - Supports TypeScript
 
+## Demo
+
+[Demo on stackblitz](https://stackblitz.com/github/ALiangLiang/vue-call-modal/tree/main/example?file=src%2FApp.vue)
+
 ## Installation
 
 ```bash
