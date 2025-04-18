@@ -1,10 +1,10 @@
-import { makeComponentFunction } from "../../../src";
+import { makeComponentFunction } from "vue-call-modal";
 import BaseModal from "./BaseModal.vue";
 import PropsModal from "./PropsModal.vue";
 import FormModal from "./FormModal.vue";
 import CustomVantDialog from "./CustomVantDialog.vue";
 import PluginModal from "./PluginModal.vue";
-import { createPinia } from 'pinia'
+import { storePlugin } from '../stores'
 
 const [openBaseModal, unmountBaseModal] = makeComponentFunction(BaseModal)
 const [openPropsModal, unmountPropsModal] = makeComponentFunction(PropsModal)
@@ -12,7 +12,7 @@ const [openFormModal, unmountFormModal] = makeComponentFunction(FormModal)
 const [openNonKeepAliveFormModal, unmountNonKeepAliveFormModal] = makeComponentFunction(FormModal, { keepAlive: false })
 const [openCustomVantDialog, unmountCustomVantDialog] = makeComponentFunction(CustomVantDialog)
 const [openPluginModal, unmountPluginModal] = makeComponentFunction(PluginModal, {
-  plugins: [createPinia()],
+  plugins: [storePlugin],
 })
 
 export {
