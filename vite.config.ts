@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
-import viteplay from '@viteplay/plugin'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,7 +10,6 @@ export default defineConfig({
       include: 'src',
       tsconfigPath: 'tsconfig.app.json',
     }),
-    viteplay({})
   ],
   build: {
     lib: {
